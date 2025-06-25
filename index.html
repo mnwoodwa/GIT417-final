@@ -2,7 +2,8 @@
 <html lang = "en">
     <head>
         <title>Limelight Performing Arts</title>
-        <meta name = "author" title = "Meredith Woodward">
+        <meta name = "author" content = "Meredith Woodward">
+        <meta charset="UTF-8">
         <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
@@ -22,11 +23,11 @@
         <main>
             <section id = "productSwitcher">
                 <h2>Buy Tickets</h2>
-                <section id = "switcherButtons">
+                <div id = "switcherButtons">
                     <button id ="CBButton">Charlie Brown</button>
                     <button id = "AnnButton">Annie jr.</button>
                     <button id = "FootButton">Footloose</button>
-                </section>
+                </div>
                 <section id = "charlie" class = "selected">
                     <h3>You're a Good Man Charlie Brown</h3>
                     <img src = "charliebrown.png" alt = "image banner with yellow background and Charlie Brown's shirt pattern. Also says the title 'You're a Good Man Charlie Brown' in the center of the image.">
@@ -64,11 +65,11 @@
             <section id = "contact" >
                 <h3>Contact Us!</h3>
                 <form>
-                    <label for "name">Full Name</label>
+                    <label for="name">Full Name</label>
                     <input id = "name" type = "text" required>
-                    <label for "phone">Phone Number</label>
+                    <label for="phone">Phone Number</label>
                     <input id = "phone" type = "tel" required>
-                    <label for "email">Email Address</label>
+                    <label for="email">Email Address</label>
                     <input id = "email" type = "email" required>
                     <label for = "comment">Comments</label>
                     <textarea id = "comment" required></textarea>
