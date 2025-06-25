@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-    <title>Limelight Performing Arts</title>
-    <meta name = "author" title = "Meredith Woodward">
-    <link rel = "stylesheet" href = "styles.css">
-</head>
-<body>
-
-    <header>
-        <h1>Limelight Performing Arts</h1>
-        <nav>
-            <ul>
-                <li><a href = "#productSwitcher">Tickets</a></li>
-                <li><a href = "#game">Game</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-        <section id = "productSwitcher">
-            <h2>Buy Tickets</h2>
-            <section id = "switcherButtons">
-                <button id ="CBButton">Charlie Brown</button>
-                <button id = "AnnButton">Annie jr.</button>
-                <button id = "FootButton">Footloose</button>
-            </section>
-            <section id = "charlie" class = "selected">
-                <h3>You're a Good Man Charlie Brown</h3>
-                <img src = "charliebrown.png" alt = "image banner with yellow background and Charlie Brown's shirt pattern. Also says the title 'You're a Good Man Charlie Brown' in the center of the image.">
-                <p>Happiness is great musical theatre! With charm, wit and heart, You’re A Good Man, Charlie Brown explores life through the eyes of Charlie Brown and his friends in the Peanuts gang. This revue of songs and vignettes, based on the beloved Charles Schulz comic strip. Buy your tickets today!</p>
-            </section>
-            <section id = "annie" class = "hiddenItem">
-                <h3>Annie jr.</h3>
-                <img src = "anniejr.jpg" alt = "Annie jr. logo with red background. A cartoon version of Annie is standing over the logo, which is white and outlined in red. Behind the logo is a silouette of the New York horizon">
-                <p>With equal measures of pluck and positivity, little orphan Annie charms everyone’s hearts despite a next-to-nothing start in 1930s New York City. Annie is determined to find the parents who abandoned her years ago on the doorstep of an orphanage run by the cruel Miss Hannigan. Annie eventually foils Miss Hannigan’s evil machinations, finding a new home and family in billionaire Oliver Warbucks, his personal secretary, Grace Farrell, and a lovable mutt named Sandy</p>
-            </section>
-            <section id = "footloose" class = "hiddenItem">
-                <h3>Footloose</h3>
-                <img src = "footloose.png" alt = "yellow logo that says 'footloose'. A purple and blue brick wall makes up the background. The limelight logo can be seen in the top left corner of the image.">
-                <p>Get ready to kick off your Sundays shoes with a high-energy musical that will have you dancing in your seats as a group of teens fights to bring music and movement back to their town! 🎶👟</p>
-            </section>
-        </section>
-        <!--Product switcher-->
-        <!--number guessing game-->
-        <section id = "game">
-            <div>
-                <h2>Guessing Game!</h2>
-                <form>
-                    <label for = "guessNum">Enter a number between 1 and 10:</label>
-                    <!--<span class = "message">Enter a number between 1 and 10:</span>-->
-                    <input type = "number" name = "guessNum" id = "guessNum">
-                    <input type = "submit" name = "gameGuess" id = "gameGuess" value = "Play Game!">
-                </form>
-                <section id = "gameInfo">
-                    <h3>Guess a Number!</h3>
-                    <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
-                    <p id = "gameResult">This is where the random number and user guess would display, along with a message about whether they won or not</p>
+    <head>
+        <title>Limelight Performing Arts</title>
+        <meta name = "author" title = "Meredith Woodward">
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Limelight Performing Arts</h1>
+            <nav>
+                <ul>
+                    <li><a href = "#productSwitcher">Tickets</a></li>
+                    <li><a href = "#game">Game</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id = "productSwitcher">
+                <h2>Buy Tickets</h2>
+                <section id = "switcherButtons">
+                    <button id ="CBButton">Charlie Brown</button>
+                    <button id = "AnnButton">Annie jr.</button>
+                    <button id = "FootButton">Footloose</button>
                 </section>
-            </div>
-        </section>
-        <section id = "contact" >
-            <h3>Contact Us!</h3>
-            <form>
-                <label for "name">Full Name</label>
-                <input id = "name" type = "text" required>
-                <label for "phone">Phone Number</label>
-                <input id = "phone" type = "tel" required>
-                <label for "email">Email Address</label>
-                <input id = "email" type = "email" required>
-                <label for = "comment">Comments</label>
-                <textarea id = "comment" required></textarea>
-                <input id = "submit" type = "submit">
-            </form>
-        </section>
-    </main>
-    <footer></footer>
-
-</body>
+                <section id = "charlie" class = "selected">
+                    <h3>You're a Good Man Charlie Brown</h3>
+                    <img src = "charliebrown.png" alt = "image banner with yellow background and Charlie Brown's shirt pattern. Also says the title 'You're a Good Man Charlie Brown' in the center of the image.">
+                    <p>Happiness is great musical theatre! With charm, wit and heart, You’re A Good Man, Charlie Brown explores life through the eyes of Charlie Brown and his friends in the Peanuts gang. This revue of songs and vignettes, based on the beloved Charles Schulz comic strip. Buy your tickets today!</p>
+                </section>
+                <section id = "annie" class = "hiddenItem">
+                    <h3>Annie jr.</h3>
+                    <img src = "anniejr.jpg" alt = "Annie jr. logo with red background. A cartoon version of Annie is standing over the logo, which is white and outlined in red. Behind the logo is a silouette of the New York horizon">
+                    <p>With equal measures of pluck and positivity, little orphan Annie charms everyone’s hearts despite a next-to-nothing start in 1930s New York City. Annie is determined to find the parents who abandoned her years ago on the doorstep of an orphanage run by the cruel Miss Hannigan. Annie eventually foils Miss Hannigan’s evil machinations, finding a new home and family in billionaire Oliver Warbucks, his personal secretary, Grace Farrell, and a lovable mutt named Sandy</p>
+                </section>
+                <section id = "footloose" class = "hiddenItem">
+                    <h3>Footloose</h3>
+                    <img src = "footloose.png" alt = "yellow logo that says 'footloose'. A purple and blue brick wall makes up the background. The limelight logo can be seen in the top left corner of the image.">
+                    <p>Get ready to kick off your Sundays shoes with a high-energy musical that will have you dancing in your seats as a group of teens fights to bring music and movement back to their town! 🎶👟</p>
+                </section>
+            </section>
+            <!--Product switcher-->
+            <!--number guessing game-->
+            <section id = "game">
+                <div>
+                    <h2>Guessing Game!</h2>
+                    <form>
+                        <label for = "guessNum">Enter a number between 1 and 10:</label>
+                        <!--<span class = "message">Enter a number between 1 and 10:</span>-->
+                        <input type = "number" name = "guessNum" id = "guessNum">
+                        <input type = "submit" name = "gameGuess" id = "gameGuess" value = "Play Game!">
+                    </form>
+                    <section id = "gameInfo">
+                        <h3>Guess a Number!</h3>
+                        <p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+                        <p id = "gameResult">This is where the random number and user guess would display, along with a message about whether they won or not</p>
+                    </section>
+                </div>
+            </section>
+            <section id = "contact" >
+                <h3>Contact Us!</h3>
+                <form>
+                    <label for "name">Full Name</label>
+                    <input id = "name" type = "text" required>
+                    <label for "phone">Phone Number</label>
+                    <input id = "phone" type = "tel" required>
+                    <label for "email">Email Address</label>
+                    <input id = "email" type = "email" required>
+                    <label for = "comment">Comments</label>
+                    <textarea id = "comment" required></textarea>
+                    <input id = "submit" type = "submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <small> Copyright 2025 Limelight<br></small>
+        </footer>
+    </body>
 </html>
 
 <!--needs light or dark mode-->
