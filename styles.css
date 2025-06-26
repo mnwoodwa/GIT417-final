@@ -8,7 +8,7 @@
 }
 
 html{
-    background-color: var(--lt-green);
+    background-color: var(--white);
 }
 
 body {
@@ -16,4 +16,114 @@ body {
     line-height: 1.2;
     font-family: sans-serif; /*change font style*/
     box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 100%;
+    padding: 16px;
+    max-width: calc(1280px - 32px);
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto 1rem auto;
+    background-color: var(--lt-gray);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+h2{
+    font-size: 1.65rem;
+    margin: 0.75rem;
+}
+
+h3{
+    font-size: 1.45rem;
+    margin: 0.5rem;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+p{
+    max-width: 65ch;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+button, input[type = "submit"]{
+    display: block;
+    padding: 1rem;
+    background-color: var(--lime-green);
+    color: var(--black);
+    border: none;
+}
+
+input[type = "submit"]{
+    width: 90%;
+    margin: 0 auto;
+}
+
+input, label {
+    display: block;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+label {
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+input {
+    padding: 0.5rem 0.25rem;
+    margin: 0 auto 1rem auto;
+    width: (100% - 1rem);
+}
+
+.error{
+    font-size: 1em;
+    display: block;
+}
+
+/*#charlie, #annie, #footloose, #game {
+    background-color: var(--lt-green);
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 1280px;
+}*/
+
+#productSwitcher, #game, #contact {
+    background-color: var(--lt-green);
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 1280px;
+}
+
+.selected {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 1rem;
+}
+
+.hiddenItem {
+    display: none;
+}
+
+#switcherButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
 }
