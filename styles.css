@@ -3,4 +3,17 @@
     --black: #000;
     --lime-green: #68a61c; 
     --dark-gray: #2d3033;
+    --lt-gray: #999fa8;
+    --lt-green: #f5f9f4;
+}
+
+html{
+    background-color: var(--lt-green);
+}
+
+body {
+    color: var(--black);
+    line-height: 1.2;
+    font-family: sans-serif; /*change font style*/
+    box-sizing: border-box;
 }
