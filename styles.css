@@ -1,21 +1,34 @@
 :root {
-    --white: #fff;
-    --black: #000;
-    --lime-green: #68a61c; 
-    --dark-gray: #2d3033;
-    --lt-gray: #999fa8;
-    --lt-green: #f5f9f4;
+    --background-color: #fff;
+    --text: #000;
+    --button: #68a61c; 
+    --header: #999fa8;
+    --section: #f5f9f4;
 }
 
-html{
-    background-color: var(--white);
+body.light-mode {
+    --background-color: #fff;
+    --text: #000;
+    --button: #68a61c; 
+    --header: #999fa8;
+    --section: #f5f9f4;
 }
+
+body.dark-mode {
+    --background-color: #000;
+    --text: #fff;
+    --header: #3c3a3a;
+    --section: #1b1b1b;
+
+}
+
 
 body {
-    color: var(--black);
+    color: var(--text);
     line-height: 1.2;
     font-family: sans-serif; /*change font style*/
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
 
 
@@ -28,7 +41,7 @@ header, main, footer {
 
 header {
     margin: 0 auto 1rem auto;
-    background-color: var(--lt-gray);
+    background-color: var(--header);
     display: flex;
     grid-template-columns: 1fr 1fr;
 }
@@ -63,7 +76,7 @@ nav {
 }
 
 nav a {
-    color: var(--white);
+    color: var(--background);
     padding: 15px;
     text-decoration: none;
 }
@@ -74,7 +87,7 @@ nav li{
 }
 
 nav a:hover {
-    color: var(--lime-green);
+    color: var(--button);
     text-decoration: underline;
 }
 
@@ -114,9 +127,10 @@ p{
 button, input[type = "submit"]{
     display: block;
     padding: 1rem;
-    background-color: var(--lime-green);
+    background-color: var(--button);
     color: var(--black);
     border: none;
+    cursor: pointer;
 }
 
 input[type = "submit"]{
@@ -145,15 +159,10 @@ input {
     display: block;
 }
 
-/*#charlie, #annie, #footloose, #game {
-    background-color: var(--lt-green);
-    padding: 1rem;
-    width: calc(100% - 2rem);
-    max-width: 1280px;
-}*/
+
 
 #productSwitcher, #game, #contact {
-    background-color: var(--lt-green);
+    background-color: var(--section);
     padding: 1rem;
     width: calc(100% - 2rem);
     max-width: 1280px;
@@ -277,6 +286,6 @@ input[type = "submit"]{
 footer {
     padding: 1rem 0;
     text-align: center;
-    background-color: var(--lt-gray);
+    background-color: var(--header);
     margin-top: 2rem;
 }
