@@ -33,6 +33,14 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
+#toggleMode {
+    background: none;
+    cursor: pointer;
+}
+
+#toggleMode img {
+    display: block;
+}
 
 ul{
     list-style: none;
