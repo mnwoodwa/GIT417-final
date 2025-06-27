@@ -8,7 +8,6 @@
     </head>
     <body>
         <header>
-            <h1>Limelight Performing Arts</h1>
             <picture>
                 <img src = "Limelight-Black-Green-q9885r0tubbi0im0jc9bz5oaex6fqsfgi2pbavqkwu.png" alt = "Limelight logo with colors of black and green">
             </picture>
@@ -65,18 +64,22 @@
             <section id = "contact" >
                 <h3>Contact Us!</h3>
                 <form>
-                    <label for="name">Full Name</label>
+                    <label for="name">Full Name<span class = "required">*</span></label>
                     <input id = "name" type = "text" required>
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Phone Number<span class = "required">*</span></label>
                     <input id = "phone" type = "tel" required>
-                    <label for="email">Email Address</label>
+                    <label for="email">Email Address<span class = "required">*</span></label>
                     <input id = "email" type = "email" required>
-                    <label for = "comment">Comments</label>
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class = "required">*</span>
+                        </legend>
+                    </fieldset>
+                    <label for = "comment">Comments<span class = "required">*</span></label>
                     <textarea id = "comment" required></textarea>
                     <input id = "submit" type = "submit">
                 </form>
             </section>
-        </main>
+        </main><!--valid user input should be given--> <!--When the form is complete and submitted properly, the form should reset and display a message to the user thanking them for their submission, with the info they submitted, pulled from the object you created.-->
         <footer>
             <small> Copyright 2025 Limelight<br></small>
         </footer>
