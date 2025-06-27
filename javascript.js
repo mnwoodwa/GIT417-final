@@ -39,4 +39,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
             darkMode();
         }
     });
+
+    const shows = {
+        CBButton: 'charlie',
+        AnnButton: 'annie',
+        FootButton: 'footloose'
+    };
+
+    Object.keys(shows).forEach(buttonId => {
+        const button = document.getElementById(buttonId);
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.show').forEach(show => {
+                show.classList.remove('selected');
+                show.classList.add('hiddenItem');
+            });
+           const showId = shows[buttonId];
+           const showToView = document.getElementById(showId);
+           showToView.classList.remove('hiddenItem');
+           showToView.classList.add('selected');
+    });
+});
+
 });

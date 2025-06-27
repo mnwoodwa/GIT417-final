@@ -3,7 +3,7 @@
     --text: #000;
     --button: #68a61c; 
     --header: #999fa8;
-    --section: #f5f9f4;
+    --section: #dae6d7;
 }
 
 body.light-mode {
@@ -11,7 +11,7 @@ body.light-mode {
     --text: #000;
     --button: #68a61c; 
     --header: #999fa8;
-    --section: #f5f9f4;
+    --section: #eaf4e8;
 }
 
 body.dark-mode {
