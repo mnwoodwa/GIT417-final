@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     };
 
-    if(localStorage.getItem('theme') === 'dark') {
+    if(localStorage.getItem('theme') === 'dark') { 
         darkMode();
     } else {
         lightMode();
     }
 
-    toggleMode.addEventListener('click', () => {
+    toggleMode.addEventListener('click', () => { //when the button is clicked
         //button will toggle when clicked
         if(document.body.classList.contains('dark-mode')) {
             lightMode();
@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
     });
 
-    const shows = {
+    const shows = {  //this is for the product switcher
         CBButton: 'charlie',
         AnnButton: 'annie',
         FootButton: 'footloose'
     };
 
-    Object.keys(shows).forEach(buttonId => {
+    Object.keys(shows).forEach(buttonId => { //when clicked, the section will be shown and the other sections will be hidden
         const button = document.getElementById(buttonId);
         button.addEventListener('click', () => {
             document.querySelectorAll('.show').forEach(show => {
@@ -59,24 +59,24 @@ document.addEventListener('DOMContentLoaded', ()=> {
            showToView.classList.add('selected');
         });
     });
-
+//the number guessing game
     const form = document.querySelector('#game form');
     const input = document.getElementById('guessNum');
     const result = document.getElementById('gameResult');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function(event) { 
         event.preventDefault();
         const userGuess = parseInt(input.value, 10);
 
-        if(isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
+        if(isNaN(userGuess) || userGuess < 1 || userGuess > 10) { //if the user puts in the guess incorrectly from how the instructions ask
             result.textContent = 'Please enter a number between 1 and 10';
             return;
         }
 
-        const randomNum = Math.floor(Math.random() * 10) + 1;
+        const randomNum = Math.floor(Math.random() * 10) + 1; //random generator
 
         if(userGuess === randomNum) {
-            result.textContent = `You guessed ${userGuess} and the number was ${randomNum}. You win!`;
+            result.textContent = `You guessed ${userGuess} and the number was ${randomNum}. You win!`; //output depending if the user guesses the correct answer
         } else {
             result.textContent = `You guessed ${userGuess}, but the number was ${randomNum}. Try again!`;
         }
@@ -157,9 +157,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 comment: commentInput.value.trim()
             };
 
-            contactForm.reset();
+            contactForm.reset(); //resets the form
 
-            const pastMessage = document.querySelector('#thankYouMessage');
+            const pastMessage = document.querySelector('#thankYouMessage'); //triggered when all input is valid
             if (pastMessage) {
                 pastMessage.remove();
             }
