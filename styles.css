@@ -25,25 +25,30 @@ body.dark-mode {
 
 body {
     color: var(--text);
-    line-height: 1.2;
+    line-height: 1.7;
     font-family: sans-serif; /*change font style*/
     box-sizing: border-box;
     background-color: var(--background-color);
 }
 
-
-header, main, footer {
-    width: 100%;
-    padding: 16px;
-    max-width: calc(1280px - 32px);
+.page-container {
+    width: 1280px;
     margin: 0 auto;
 }
 
+header, main, footer {
+    padding: 16px;
+}
+
 header {
-    margin: 0 auto 1rem auto;
     background-color: var(--header);
+    padding: 40px;
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+
 }
 
 #toggleMode {
@@ -164,7 +169,7 @@ input {
 #productSwitcher, #game, #contact {
     background-color: var(--section);
     padding: 1rem;
-    width: calc(100% - 2rem);
+    width: 0 auto;
     max-width: 1280px;
 }
 
