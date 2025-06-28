@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         //enables dark mode
         document.body.classList.remove('light-mode');
         document.body.classList.add('dark-mode');
-        toggleIcon.src = 'Light mode.png';
+        toggleIcon.src = 'Light-Mode.png';
         toggleIcon.alt = 'Light mode button';
         localStorage.setItem('theme', 'dark');
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         //enables light mode
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
-        toggleIcon.src = 'Dark mode.png';
+        toggleIcon.src = 'Dark-Mode.png';
         toggleIcon.alt = 'Dark mode button';
         localStorage.setItem('theme', 'light');
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             result.textContent = `You guessed ${userGuess}, but the number was ${randomNum}. Try again!`;
         }
     });
-    const contactForm = document.querySelector('#contact form');
+    const contactForm = document.querySelector('#contactForm');
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
     const emailInput = document.getElementById('email');
